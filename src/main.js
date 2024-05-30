@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             const menuContainer = document.getElementById('menuList');
             
-            // Assuming there's only one category in this case
             const categoryDiv = document.createElement('div');
             categoryDiv.classList.add('menu-category');
             
@@ -54,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
             categoryDiv.appendChild(itemList);
             menuContainer.appendChild(categoryDiv);
 
-            // Create and append total amount element
             const totalAmountDiv = document.createElement('div');
             totalAmountDiv.classList.add('total-amount');
             const totalAmountLabel = document.createElement('span');
@@ -66,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
             totalAmountDiv.appendChild(totalAmountValue);
             menuContainer.appendChild(totalAmountDiv);
 
-            // Add event listeners to update total amount
             const quantityInputs = document.querySelectorAll('.menu-item-quantity');
             quantityInputs.forEach(input => {
                 input.addEventListener('input', updateTotalAmount);
@@ -97,11 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
    carousel.style.width = `calc(50% * ${carouselItems.length * 1})`;
-
    carousel.style.animationPlayState = 'running';
  });
 
- window.addEventListener('load',function(){
+    window.addEventListener('load',function(){
     document.querySelector('body').classList.add("loaded")  
-  });
+    });
   

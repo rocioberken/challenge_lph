@@ -136,18 +136,15 @@
     <script>
       function iniciarMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-      
-      center:{lat: 40.4189232, lng: -3.68912}, 
+        center:{lat: 40.4189232, lng: -3.68912}, 
         zoom:14,
         mapId:'4f9218aee69b1d7', 
         disableDefaultUI:true
        });
-       const marker = new google.maps.Marker (
-        {
+       const marker = new google.maps.Marker ({
         position:{lat: 40.4189232, lng: -3.68912}, 
         map:map
       });
-        
       } 
       
     </script>
