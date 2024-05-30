@@ -5,7 +5,7 @@ import './assets/fonts/Marcheile-Bold-Condensed.woff2';
 /* DO NOT EDIT ABOVE THIS LINE. You can start editing here. */
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('src/menu.json')
+    fetch("./src/menu.json")
         .then(response => response.json())
         .then(data => {
             const menuContainer = document.getElementById('menuList');
