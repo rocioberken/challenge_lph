@@ -1,3 +1,15 @@
+## Hello! ##
+I just uploaded finishing this challenge for a Web Designer position, also here is the vercel link for a quick view
+https://challenge-lph.vercel.app/
+
+I took the opportunity to include a new section called Reviews, to use food images in a non-obvious way.
+
+I would love to have included some better animations to improve the user experience, maybe I can add some details in the near future.
+
+Below is the description of the assignment as I received it.
+
+--- --- ---
+
 # Web Designer Code Challenge
 Fever's Code Challenge for Web Designer job applicants
 
