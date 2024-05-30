@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/images/header/lph-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Pollos Hermanos</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav menu">
+        <input type="checkbox" id="nav-check" class="fade-in-slow">
+        <div class="nav-header fade-in-slow">
+          <img src="./src/assets/images/header/lph-logo.png" alt="Los Pollos Hermanos" class="logo">
+        </div>
+        <div class="nav-btn fade-in-slow">
+          <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+          </label>
+        </div>
+        <div class="nav-links"> 
+          <ul class=" nav-links">
+            <li class="menu ">
+              <a href="#menu" class="fade-in-slow">Menú</a>
+            </li>
+            <li class="menu">
+              <a href="#location" class="fade-in-slow">Location</a>
+            </li>
+            <li class="menu">
+              <a href="#partners" class="fade-in-slow">Partners</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero " id="hero">
+        <div class="title container ">
+          <h1 class="fade-in ">Order <span class="yellow">fried chicken</span> now </h1>
+          <h2 class="fade-in-mid ">Get famous chicken however you want it</h2>
+          <button class="cta fade-in-slow">
+          <a href="#"> Order now</a>
+          </button>
+        </div>
+        <video src="src/assets/videos/hero-video.mp4" autoplay muted loop id="hero_video" class="fade-in"></video>
+      </div>
+    </header>
+    <main>
+      <section class="menu" id="menu">
+        <div class="title ">
+          <h2> Menú</h2>
+        </div>
+        <div id="menuList" class="container menuList"></div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="title ">
+          <h2> People says...</h2>
+        </div>
+        <div class="container">
+          <div class=" row">
+            <li class="card">
+              <img src="src/assets/images/gastro/gasto-item-chicken-wings.jpg" alt="" class="round">
+              <span>The finest ingredients are brought together with love and care, then slow cooked to perfection</span>
+            </li>
+            <li class="card">
+              <img src="src/assets/images/gastro/gasto-item-chicken-buger.jpg" alt="" class="round">
+              <span>Yes, the old ways are still best at Los Pollos Hermanos. But don't take my word for it. One taste, and you'll know </span>
+            </li>
+            <li class="card">
+              <img src="src/assets/images/gastro/gasto-item-french-fries.jpg" alt="" class="round">
+              <span>The finest ingredients are brought together with love and care, then slow cooked to perfection</span>
+            </li>
+            <li class="card">
+              <img src="src/assets/images/gastro/gasto-item-milkshake.jpg" alt="" class="round">
+              <span>Yes, the old ways are still best at Los Pollos Hermanos. But don't take my word for it. One taste, and you'll know </span>
+            </li>
+          </div>
+        </div>
+      </section>
+      <section class="location " id="location">
+        <div class="title">
+          <h2>  <span class="lph">New Los Pollos Hermanos restaurant in Madrid!</span></h2>
+        </div>
+        <div class="container">
+          <div class="row" >
+            <p class="column-2 ">
+              <span> The first establishment in Spain to incorporate the new
+              company image. </span> <br><br>
+              The restaurants sporting the new image
+              have been warmly welcomed by the public, with growth
+              above 30% in those premises with the new Los Pollos
+              Hermanos identity. Los Pollos Hermanos, flagship brand of Eat Out restoration
+              group, announced the opening its first restaurant in Madrid, at
+              Puerta de Alcalá. 
+              <button class="cta">
+              <a href="https://maps.app.goo.gl/nPGdj4UAFWpfLvNYA" target="_blank">Get directions </a>
+              </button>
+            </p>
+            <p class="column-2 place"></p>
+          </div>
+        </div>
+        <div class="map">
+          <div id="map"></div>
+        </div>
+      </section>
+      <section id="partners" class="partners">
+        <div class="">
+          <div class="title">
+            <h2>In partnership with</h2>
+          </div>
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item"><img src="src/assets/images/partners/fever.png" alt="Fever"></div>
+              <div class="carousel-item"><img src="src/assets/images/partners/BB.png" alt="Breaking Bad"></div>
+              <div class="carousel-item"><img src="src/assets/images/partners/github.png" alt="github"></div>
+              <div class="carousel-item"><img src="src/assets/images/partners/vite.svg" alt="vite"></div>
+            </div>
+          </div>
+          <div class="title">
+            <h3>Event by
+              <img src="src/assets/images/header/lph-logo.png" class="center" alt="Los Pollos Hermanos">
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>© 2022 LPH / Los pollos hermanos. <br> 
+          <span>All Rights Reserved. Los
+          Pollos Hermanos is an original license. 
+          <a href="#">Privacy policy</a> </span> 
+        </p>
+      </div>
+    </footer>
+    <script>
+      function iniciarMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+      
+      center:{lat: 40.4189232, lng: -3.68912}, 
+        zoom:14,
+        mapId:'4f9218aee69b1d7', 
+        disableDefaultUI:true
+       });
+       const marker = new google.maps.Marker (
+        {
+        position:{lat: 40.4189232, lng: -3.68912}, 
+        map:map
+      });
+        
+      } 
+      
+    </script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTy8VvGbbnpSJQFBE4RFoPIiUkFow7Y8E&callback=iniciarMap"></script>
+    <!-- Do not edit below this line -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

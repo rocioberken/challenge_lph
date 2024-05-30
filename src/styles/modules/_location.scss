@@ -1,0 +1,75 @@
+section#location{
+    background-color: $c-light-grey;
+    padding: 2rem 0 0;
+
+}
+#location .title h2{
+    color: $c-blue-light;    
+    font-family: $f-montserrat; 
+    text-align: center;
+    letter-spacing: $f-lspacing;
+    font-size: 40px;       
+    text-shadow: 1px 1px 1px $c-black;
+
+}
+#location .container{
+    padding: 1rem 0;
+
+}
+#location p{
+    font-family: $f-roboto;
+
+}
+.location p span{
+    font-weight: $f-bold;
+}
+.location button.cta{
+    margin: 1rem 0;
+}
+.column-2.place{
+    background-image: url("././assets/images/location/location-img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.map {
+    display: inline-block;
+    width: 100%;
+    margin:  1rem 0 0;
+}
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+@media (max-width: $small) { 
+    #map {
+        height: 350px !important;
+    }
+}
+@media (max-width: $md) {
+    #location .title, #location .title h1, #location .title h2{
+      text-align: left !important;
+      margin: 0 auto;
+        }
+        .place {
+            min-height: 350px !important;
+        }
+        .location button.cta {
+             margin: 1.5rem 0; 
+        }
+        .location .cta {
+           
+            width: 100%;
+       }
+    
+    #map {
+        height: 350px !important;
+    }
+    
+}
+@media (max-width: $desk) {
+    #map {
+        height: 400px !important;
+
+    }
+}

@@ -1,0 +1,54 @@
+#partners{
+    background-color: $c-blue;
+    padding: 2rem 0;
+
+}
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    }
+  
+  .carousel {
+    display: flex;
+    width: calc(100% * 2);  
+    animation: slide 40s linear infinite;
+  }
+  
+  .carousel-item {
+    flex: 1 0 5%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    max-width: 80px;
+    max-height: 100px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+  
+  .title img{
+    width: 160px;
+    margin: 2rem auto;
+ }
+
+#partners .title {
+    color: $c-black;
+}
+  @media (max-width: $md) {
+    .carousel-item {
+        flex: 1 0 15% !important;  
+        
+      }
+  }
+  

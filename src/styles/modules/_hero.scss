@@ -1,0 +1,73 @@
+.hero{
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: calc(88vh - 5rem);
+  }
+  .hero video{
+    overflow: hidden;
+     display: block;
+     height: 80vh;
+     overflow: hidden;
+     z-index: -10;
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     top: 0;
+     width: 100%;
+     height: 88vh;
+     -o-object-fit: cover;
+     object-fit: cover;
+  }
+
+ .hero .title{
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    top: 35vh;
+    position: relative;
+
+ }
+ #hero .title .cta  {
+   width: 60% !important;
+}
+#hero .title .cta  a{ 
+  font-size: 26px;
+}
+#hero .title {
+  color: $c-white;
+  text-shadow: 4px 4px 6px $c-black;
+  font-family: $f-roboto;
+}
+#hero .title h1{
+   
+    font-weight: $f-bold;
+    margin: 0 0 1rem;
+    font-size: 50px;
+}
+#hero .title h2{
+ 
+    margin: 0 0 1.5rem;
+}
+#hero .title h1 span{
+    color: $c-yellow;
+    text-shadow: 4px 4px 6px $c-black;
+    font-family: $f-montserrat;
+    font-style: normal;
+
+}
+
+@media (max-width: $small) {
+ 
+
+}
+@media (max-width: $md) {
+  #hero .title h1 {
+   font-size: 45px !important;
+  }
+  #hero .title  {
+    width: 100% !important;
+    top: 28vh !important ;
+     }
+}

@@ -1,0 +1,191 @@
+@import 'typography';
+@import 'variables';
+
+
+/*********** Breakpoints *************/
+* {
+  box-sizing: border-box;
+}
+html{
+    font-family: $f-roboto;
+    margin: 0;
+    padding: 0;
+}  
+body {
+    font-family: $f-roboto;
+    font-family: $f-montserrat;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+li,ul, a{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+  }
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+h1{
+  font-size: 42px;
+}
+h2{
+  font-size: 36px;
+}
+h3{
+  font-size: 32px;
+}
+p{
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+button{
+  font-size: 20px;
+}
+.title{
+  width: 80%;
+  text-align: center;
+  font-family: $f-montserrat;
+  font-weight: 400;
+  margin: 0 auto;
+}
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*********** Columns *************/
+
+section{
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  padding: 2rem 0 4rem;
+
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+
+}
+.column-4  {
+   flex-basis: 25%;
+ 
+}
+.column-2 {
+  flex-basis: 45%;
+  
+}
+.column-1 {
+   width: 100%;
+  padding: 1rem;
+}
+
+button {
+  font-family: $f-montserrat;
+  font-weight: $f-bold;
+  letter-spacing: $f-lspacing;
+  text-align: center;
+  display: inline-block;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 1rem 2rem;
+  box-shadow: 2px 2px 2px $c-black;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.cta {
+  background-color: #FFDB00;
+  text-align: center;
+  display: block;
+  box-shadow: 2px 2px 2px black;
+  color: $c-black;
+  font-family: $f-montserrat;
+  font-weight: $f-bold;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer !important;
+
+}
+.cta a {
+  color: $c-black;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer !important;
+
+
+} 
+.cta:hover, 
+.cta:focus {
+    box-shadow: 5px 5px 5px $c-black;
+    cursor: pointer;
+}
+@keyframes fade-in {
+  from {
+     opacity: 0;
+  }
+  to {
+     opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in .5s; 
+}
+.fade-in-mid {
+  animation: fade-in 1s; 
+}
+.fade-in-slow {
+  animation: fade-in 1.5s; 
+}
+
+/*********** Breakpoints *************/
+
+
+@media (max-width: $small) {
+  .column-4, .column-2 {
+    width: 100% !important;
+    flex-basis: 100%;
+
+  }.row{
+    width: 100% !important;
+    display: block;
+  }
+  
+}
+@media (max-width: $md) {
+  .column-4 {
+    width: 50% !important;
+  } .title, .container  {
+    width: 90% !important;
+  }
+  h3{
+    font-size: 28px !important;
+  }
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 32px;
+  }
+}
+ 

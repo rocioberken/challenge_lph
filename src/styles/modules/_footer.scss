@@ -1,0 +1,22 @@
+footer { 
+    background-color: $c-black;
+    padding: 1.2rem;
+}
+footer p{ 
+    font-family: $f-roboto;
+    color: $c-white;
+    font-size: 12px;
+    font-weight: $f-regular;
+    line-height: 2;    
+    text-align: center;
+}
+footer p span{ 
+    font-family: $f-roboto;
+    color: $c-white;
+    font-size: 10px;
+    font-weight: $f-regular;
+}
+footer p a{ 
+    color: $c-white !important;
+    text-decoration: underline;
+}

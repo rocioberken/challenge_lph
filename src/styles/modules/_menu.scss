@@ -1,0 +1,122 @@
+section#menu{
+    background-color: $c-blue-light;
+ 
+}
+#menu .title h2{
+    color: $c-yellow;    
+    font-family: $f-montserrat; 
+    text-align: center;
+    letter-spacing: $f-lspacing2;
+    font-size: 50px;
+    display: block;
+    width: 100%;
+    padding: 0 0 2rem;
+    margin: 0 0 0 0;
+    text-shadow: 1px 1px 2px black;
+}
+.menuList {
+    width: 80%;
+    margin: 0 auto;
+}
+.menuList  p{
+    font-family: $f-roboto;
+    font-weight: $f-bold;  
+    margin: 10px 0 ;
+    width: 50%;
+    font-size: 18px;
+}
+.menuList  h3{
+    color: $c-black;
+    font-family: $f-montserrat;
+    font-weight: $f-bold;
+    margin: 35px 0 0;
+    display: inline-block;
+    text-decoration: underline;
+    width: 70%;
+}
+.menuList h3 span{
+    color: $c-yellow;    
+    font-family: $f-roboto;
+    font-weight: $f-bold;
+    padding:0 1rem;
+    font-size: 26px;
+    display: inline-block;
+
+}
+.menuList label{
+    font-family: $f-roboto;
+    font-weight: $f-bold;  
+    font-size: 20px;
+    display: inline-block;
+    background-color:$c-yellow;  
+    padding: 5px 1.8rem;
+    width: 25%;
+    text-align: right;
+    }
+.menu-item-quantity{
+    width: 50px;
+     font-size: 20px;
+     background-color: $c-yellow;    
+    border: none;
+    font-family: $f-roboto;
+    font-weight: $f-bold;  
+    text-align: center;
+   
+}
+.total-amount{
+    margin: 0 2rem ;
+    background-color:$c-yellow;  
+    padding: 1rem;
+    text-align: center;
+    margin: 3rem auto;
+    width: 60%;
+    display: block;
+    border: 2px solid black;
+}
+.total-amount span{
+     color: $c-black; 
+     padding: 0.3rem;    
+     font-weight: $f-bold;  
+     font-size: 20px;
+}
+
+
+@media (max-width: $small) {
+    
+  }
+  @media (max-width: $md) {
+   
+      .menuList label{    
+          width: 100%  !important;
+          margin: 1rem 0 0;
+          padding: 5px 0.5rem;
+      }
+      .menuList {
+          width: 90% !important;
+      }
+      .menuList h3 {
+        width: 100% !important;
+    }
+  
+      .menuList h3 span{
+          padding: 0 0.2rem;
+          float: right;
+      }
+      .total-amount span{
+          color: $c-black; 
+          padding: 0.3rem;    
+       }
+       .menuList p{
+        width: 100% !important;
+       }
+  }
+  @media (max-width: $desk ) {
+    
+    
+  }
+  @media (max-width: $desk ) {
+     
+  }
+  @media (max-width: 1400px) {
+    
+  }
